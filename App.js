@@ -7,6 +7,15 @@ let btns = ["yellow", "green", "purple", "red"];
 let h2 = document.querySelector("h2");
 let leaderboard = []; // Array to store leaderboard entries
 
+ document.addEventListener("touchstart", (e) => {
+            if (!started) {
+                console.log("Touch detected");
+                started = true;
+                levelUp();
+            }
+        });
+
+
 document.addEventListener("keypress", (e) => {
     if (!started) {
         console.log(e.key);
