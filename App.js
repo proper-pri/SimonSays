@@ -62,7 +62,7 @@ function checkAns(idx) {
             }, 1000);
         }
     } else {
-        h2.innerText = `Game Over. Your score Was : ${level}`;
+        h2.innerText = `Game Over. Your scored : ${level}`;
         promptForScore();
         reset();
     }
